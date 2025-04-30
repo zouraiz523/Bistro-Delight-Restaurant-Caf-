@@ -1,0 +1,148 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Avocado Toast",
+      "price": 12.95,
+      "description": "Toasted artisan bread topped with smashed avocado, cherry tomatoes, microgreens, and a poached egg.",
+      "image": "https://images.unsplash.com/photo-1605475028149-e91b8ef5083e",
+      "category": "breakfast",
+      "badges": ["vegetarian", "popular"]
+    },
+    {
+      "id": 2,
+      "name": "Classic Eggs Benedict",
+      "price": 14.95,
+      "description": "English muffin topped with Canadian bacon, poached eggs, and hollandaise sauce. Served with breakfast potatoes.",
+      "image": "https://images.unsplash.com/photo-1551218808-94e220e084d2",
+      "category": "breakfast",
+      "badges": ["popular"]
+    },
+    {
+      "id": 3,
+      "name": "Buttermilk Pancakes",
+      "price": 11.95,
+      "description": "Fluffy pancakes served with maple syrup, butter, and your choice of fresh berries or banana.",
+      "image": "https://images.unsplash.com/photo-1589308078052-416b862f544a",
+      "category": "breakfast",
+      "badges": ["vegetarian"]
+    },
+    {
+      "id": 4,
+      "name": "Grilled Salmon Salad",
+      "price": 18.95,
+      "description": "Grilled salmon fillet over mixed greens with cucumber, red onion, cherry tomatoes, and lemon dill vinaigrette.",
+      "image": "https://images.unsplash.com/photo-1612197516706-8ff5f87cf0b8",
+      "category": "lunch",
+      "badges": []
+    },
+    {
+      "id": 5,
+      "name": "Bistro Burger",
+      "price": 16.95,
+      "description": "Angus beef patty with aged cheddar, caramelized onions, lettuce, tomato, and special sauce on a brioche bun. Served with fries.",
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349",
+      "category": "lunch",
+      "badges": ["popular"]
+    },
+    {
+      "id": 6,
+      "name": "Chicken Pesto Sandwich",
+      "price": 15.95,
+      "description": "Grilled chicken breast with pesto, mozzarella, roasted red peppers, and arugula on ciabatta bread. Served with mixed greens.",
+      "image": "https://images.unsplash.com/photo-1613145991265-307b397f3995",
+      "category": "lunch",
+      "badges": []
+    },
+    {
+      "id": 7,
+      "name": "Filet Mignon",
+      "price": 34.95,
+      "description": "8oz filet with red wine reduction, garlic mashed potatoes, and seasonal vegetables.",
+      "image": "https://images.unsplash.com/photo-1553621042-f6e147245754",
+      "category": "dinner",
+      "badges": ["popular"]
+    },
+    {
+      "id": 8,
+      "name": "Lobster Risotto",
+      "price": 32.95,
+      "description": "Creamy Arborio rice with butter-poached lobster, asparagus, and parmesan.",
+      "image": "https://images.unsplash.com/photo-1648651904033-4c5e9f634b89",
+      "category": "dinner",
+      "badges": []
+    },
+    {
+      "id": 9,
+      "name": "Truffle Mushroom Pasta",
+      "price": 24.95,
+      "description": "Fettuccine with wild mushrooms, truffle oil, garlic, white wine, and parmesan cheese.",
+      "image": "https://images.unsplash.com/photo-1562967916-eb82221dfb33",
+      "category": "dinner",
+      "badges": ["vegetarian"]
+    },
+    {
+      "id": 10,
+      "name": "Pan-Seared Scallops",
+      "price": 29.95,
+      "description": "Sea scallops with lemon butter sauce, cauliflower puree, and crispy pancetta.",
+      "image": "https://images.unsplash.com/photo-1613145886857-fb2f2e6b23f8",
+      "category": "dinner",
+      "badges": []
+    },
+    {
+      "id": 11,
+      "name": "Chocolate Lava Cake",
+      "price": 9.95,
+      "description": "Warm chocolate cake with a molten center, served with vanilla ice cream and fresh berries.",
+      "image": "https://images.unsplash.com/photo-1599785209707-68854b1fcb31",
+      "category": "desserts",
+      "badges": ["vegetarian", "popular"]
+    },
+    {
+      "id": 12,
+      "name": "Crème Brûlée",
+      "price": 8.95,
+      "description": "Classic vanilla bean custard with a caramelized sugar crust.",
+      "image": "https://images.unsplash.com/photo-1621898855860-9d97eaeef22e",
+      "category": "desserts",
+      "badges": ["vegetarian"]
+    },
+    {
+      "id": 13,
+      "name": "New York Cheesecake",
+      "price": 8.95,
+      "description": "Creamy cheesecake with a graham cracker crust, topped with seasonal fruit compote.",
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587",
+      "category": "desserts",
+      "badges": ["vegetarian"]
+    },
+    {
+      "id": 14,
+      "name": "Signature Martini",
+      "price": 13.95,
+      "description": "House-infused citrus vodka, elderflower liqueur, and fresh lemon juice. Served with a twist.",
+      "image": "https://images.unsplash.com/photo-1604908177524-9372a16f5b6d",
+      "category": "drinks",
+      "badges": []
+    },
+    {
+      "id": 15,
+      "name": "Artisanal Cold Brew",
+      "price": 5.95,
+      "description": "Slow-steeped for 24 hours for a smooth, rich flavor. Served over ice.",
+      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93",
+      "category": "drinks",
+      "badges": ["vegetarian"]
+    },
+    {
+      "id": 16,
+      "name": "Raspberry Mojito",
+      "price": 12.95,
+      "description": "Fresh muddled raspberries, mint, lime juice, rum, and soda water.",
+      "image": "https://images.unsplash.com/photo-1620503366634-fb3fc7464ff2",
+      "category": "drinks",
+      "badges": ["popular"]
+    }
+  ]
+}

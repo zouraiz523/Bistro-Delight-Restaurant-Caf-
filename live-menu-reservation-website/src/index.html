@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Delight | Restaurant & Café</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Today's Special Popup -->
+    <div id="special-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2><i class="fas fa-star"></i> Today's Special <i class="fas fa-star"></i></h2>
+            <div id="special-content"></div>
+        </div>
+    </div>
+
+    <!-- Reservation Confirmation Popup -->
+    <div id="confirmation-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-popup">&times;</span>
+            <h2><i class="fas fa-check-circle"></i> Reservation Confirmed!</h2>
+            <p>Your table has been reserved successfully.</p>
+            <div id="reservation-details"></div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Bistro Delight</h1>
+                <p>Fine Dining & Café</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+ <!-- Hero Section -->
+<section id="home" class="hero">
+    <img src="images/bg.jpg" alt="Restaurant Background" class="hero-background">
+    <div class="hero-content">
+        <h2>Welcome to Bistro Delight</h2>
+        <p>Experience culinary excellence in a cozy atmosphere</p>
+        <div class="hero-buttons">
+            <a href="#menu" class="btn">View Menu</a>
+            <a href="#reservation" class="btn btn-outline">Reserve Table</a>
+        </div>
+    </div>
+  </section>
+  
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="all">All</button>
+                <button class="menu-tab" data-category="breakfast">Breakfast</button>
+                <button class="menu-tab" data-category="lunch">Lunch</button>
+                <button class="menu-tab" data-category="dinner">Dinner</button>
+                <button class="menu-tab" data-category="desserts">Desserts</button>
+                <button class="menu-tab" data-category="drinks">Drinks</button>
+            </div>
+            
+            <div id="menu-items" class="menu-items">
+                <!-- Menu items will be loaded here from JSON -->
+                <div class="loading">Loading menu...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2>Table Reservation</h2>
+            <form id="reservation-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Number of Guests</label>
+                    <input type="number" id="guests" name="guests" min="1" max="20" required>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests">Special Requests (Optional)</label>
+                    <textarea id="special-requests" name="special-requests"></textarea>
+                </div>
+                <button type="submit" class="btn">Reserve Table</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>What are your opening hours?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We are open every day from 8:00 AM to 10:00 PM. Breakfast is served until 11:30 AM, lunch from 12:00 PM to 3:00 PM, and dinner from 5:00 PM to 9:30 PM.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Do you offer vegetarian or vegan options?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, we have a variety of vegetarian and vegan options available on our menu. Please inform your server about any dietary requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Is outdoor seating available?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, we have a beautiful patio for outdoor dining. Outdoor seating is available on a first-come, first-served basis, but you can request it when making a reservation.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Do you accommodate large groups?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>We can accommodate groups of up to 20 people. For larger groups, please contact us directly to discuss special arrangements.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <h3>Do you offer takeout or delivery?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Yes, we offer both takeout and delivery services. You can place an order by calling us or through our partner delivery apps.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chatbot-container">
+                <h3>Have a Quick Question?</h3>
+                <div class="chatbot-box">
+                    <div id="chat-messages" class="chat-messages">
+                        <div class="chat-message bot">
+                            <p>Hello! How can I help you today? You can ask me about our hours, menu, reservations, or special events.</p>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="chat-input" placeholder="Type your question here...">
+                        <button id="send-chat" class="btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-details">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Gourmet Avenue, Foodie Town</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@bistrodelight.com</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="hours">
+                    <h3>Hours of Operation</h3>
+                    <ul>
+                        <li><span>Monday - Thursday:</span> 8:00 AM - 10:00 PM</li>
+                        <li><span>Friday - Saturday:</span> 8:00 AM - 11:00 PM</li>
+                        <li><span>Sunday:</span> 9:00 AM - 9:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Bistro Delight. All Rights Reserved.</p>
+        <p>Made with ❤️ by <strong>Developer Zouraiz</strong></p>
+    </div>
+</footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
